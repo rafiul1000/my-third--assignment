@@ -10,6 +10,10 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- font awesome cdn link -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- lato font from google fonts -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,6 +26,20 @@
         }
     </style>
 
+    <!-- custom colors -->
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+
 
 </head>
 <body class="font-lato">
@@ -32,21 +50,73 @@
 
         <!-- navbar starts from here -->
 
-        <nav>
+        <!-- <nav class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
+            <div class="navbar bg-[#F85559] rounded-full">
+                <div class="flex-1 text-white font-normal ml-8">
+                  <a class="mr-8" href="">Home</a>
+                  <a class="mr-8" href="">About Us</a>
+                  <a class="mr-8" href="">Shop</a>
+                  <a class="mr-8" href="">All Fruits</a>
+                </div>
 
-        </nav>
+                <span class="mr-40">
+                    <img class="pr-10" src="./images/logo.png" alt="">
+                    <p class="text-white font-bold text-lg">Fruit Burst</p>
+                </span>
+
+                <div class="flex-none gap-2">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                  <div class="form-control">
+                    
+                    <input type="text" placeholder="Search here" class="input input-bordered w-24 md:w-auto rounded-full " />
+                    
+                  </div>
+                  
+                </div>
+              </div>
+        </nav> -->
 
         <!-- navbar end here -->
-        
+
+        <!-- hero section starts from here -->
+
+        <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
+
+            <div class="hero min-h-screen" style="background-image: url(./images/banner4.png);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 text-6xl font-bold text-white text-center">Exotic tastes at your doorstep</h1>
+                    <p class="mb-5">We supply highly quality organic products</p>
+                    <button class="btn bg-[#F85559] border-none text-white font-extrabold">Shop Now</button>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+        <!-- hero section end -->
+
     </header>
 
     <!-- header section end -->
+
+
+    <!-- main section starts from here -->
+
     <main>
 
     </main>
+
+    <!-- main section end -->
+
+
+    <!-- footer section starts from here -->
+
     <footer>
 
     </footer>
+
+    <!-- footer section end -->
     
 </body>
 </html>
